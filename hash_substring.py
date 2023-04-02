@@ -17,7 +17,7 @@ def read_input():
 
 def print_occurrences(output):
     # this function should control output, it doesn't need any return
-    output_str = ' '.join(map(str, output)).replace('\n',' ')
+    output_str = '\n'.join(map(str, output))
     #print(' '.join(map(str, output)))
     print(output_str)
 
