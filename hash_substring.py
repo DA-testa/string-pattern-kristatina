@@ -20,8 +20,16 @@ def get_occurrences(pattern, text):
 
 
 def read_input():
-    pattern = input().strip()
-    text = input().strip()
+    # pattern = input().strip()
+    # text = input().strip()
+    # return pattern, text
+        # read a single line of input containing the pattern and text separated by a space
+    input_line = input().strip()
+
+    # split the input line into pattern and text strings
+    pattern, text = input_line.split()
+
+    # return the pattern and text strings as a tuple
     return pattern, text
 
 
