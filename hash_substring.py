@@ -20,12 +20,22 @@ def get_occurrences(pattern, text):
 
 
 def read_input():
-    pattern = input().strip()
-    text = input().strip()
-    return pattern, text
+    str = input()
 
-def print_occurrences(positions):
-    print(" ".join(map(str, positions)))
+    if "I" in str:
+        p = input()
+        t = input()   
+    elif "F" in str:
+        fileName = "./tests/06"
+        file = open(fileName, "r")
+        p = file.readline()
+        t = file.readline()
+
+    return (p.rstrip(), t.rstrip())
+
+
+def print_occurrences(output):
+    print(' '.join(map(str, output)))
 
 
 if __name__ == '__main__':
